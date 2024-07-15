@@ -410,11 +410,11 @@ def flip_spec(a, out):
     for i in range(len(out)):
         out[i] = a[len(out) - i - 1]
         
-def flip(a: TT["i"], i: int) -> TT["i"]:
+def flip(a: TT["i"]) -> TT["i"]:
     raise NotImplementedError
 
 
-test_flip = make_test("flip", flip, flip_spec, add_sizes=["i"])
+test_flip = make_test("flip", flip, flip_spec)
 ```
 
 
